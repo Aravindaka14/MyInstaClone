@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const PostView = () => {
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:3005/postView").then((data) => {
+        axios.get("https://myinstaclone-02.herokuapp.com/postView").then((data) => {
             setPosts(data.data.reverse())
         }).catch((err) => {
             console.log(err)
