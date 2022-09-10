@@ -11,7 +11,7 @@ const Form = () => {
 
     const handleData = async (e) => {
         e.preventDefault()
-        await axios({ method: "POST", url: "http://localhost:3005/form", data: post }).catch((err) => {
+        await axios({ method: "POST", url: "https://myinstaclone-02.herokuapp.com/form", data: post }).catch((err) => {
             console.log(err)
         }).finally(() => {
             navigate("/postView")
