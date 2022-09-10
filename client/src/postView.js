@@ -27,13 +27,15 @@ const PostView = () => {
                 {posts.map((post, i) => {
                     return (
                         <div className="contentDiv" key={i}>
-                            <h3>{post.name}</h3>
-                            <img src="more_icon.svg" alt="" />
-                            <p>{post.location}</p>
+                            <h3 className="userName">{post.name}</h3>
+                            <img className="moreIcon" src="more_icon.svg" alt="" />
+                            <p className="userLoc">{post.location}</p>
                             <img className="postImage" src={post.image.base64} alt="" />
-                            <p>{post.likes}</p>
-                            <p>{post.date}</p>
-                            <p>{post.description}</p>
+                            <img className="heart-share" src="heart.png" alt="" />
+                            <img className="heart-share" src="share.png" alt="" />
+                            <p className="postDate">{post.date}</p>
+                            <p className="postLikes">{post.likes} Likes</p>
+                            <p className="postDes">{post.description}</p>
                         </div>
                     )
                 })}
