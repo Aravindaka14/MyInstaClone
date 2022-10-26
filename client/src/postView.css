@@ -13,14 +13,14 @@ header {
 .nameLogo {
     top: 25px;
     left: 200px;
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
     padding: 10px 10px 10px 100px;
 }
 
 span {
     position: absolute;
-    font: normal normal normal 48px/42px Palatino;
+    font: normal normal normal 42px/38px Palatino;
     letter-spacing: 0px;
     color: #006238;
     display: inline;
@@ -28,12 +28,14 @@ span {
 }
 
 .camera {
+    background-color: white;
+    border: none;
     float: right;
-    top: 40px;
-    left: 1672px;
-    width: 48px;
-    height: 48px;
-    padding: 10px 80px 10px 0;
+    width: 54px;
+    height: 54px;
+    margin: 10px 60px 0 0;
+    font-size: 38px;
+    cursor: pointer;
 }
 
 
@@ -74,13 +76,14 @@ span {
 .heart-share {
     width: 28px;
     height: 28px;
-    margin: 5px 0 5px 25px;
+    padding-top: 10px;
+    margin: 0px 0 5px 25px;
     display: inline-block;
 }
 
 .postDate {
     float: right;
-    margin: 5px 25px 5px 0;
+    margin: 10px 25px 5px 0;
     font-weight: 500;
     height: 24px;
 }
@@ -94,4 +97,28 @@ span {
     font: normal normal bold 16px/34px Helvetica;
     letter-spacing: 0px;
     color: #000000;
+}
+
+.post-btn {
+    background-color: white;
+    border: none;
+    color: red;
+    padding: 10px 0 0 18px;
+    font-size: 28px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.post-btn:hover {
+    color: darkgreen;
+}
+
+.post-btn2 {
+    background-color: white;
+    border: none;
+    color: none;
+    padding: 10px 0 0 18px;
+    font-size: 28px;
+    cursor: pointer;
+    display: inline-block;
 }
